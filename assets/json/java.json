@@ -1,0 +1,73 @@
+{
+  "comments": [
+    { "single-line": "begins with double slash as:\n// the comment" },
+    { "multi-line": "enclosed as\n/* the comment */" },
+    { "documentation comment": "enclosed as\n/** the documentation comment */" }
+  ],
+  "loops": [
+    {
+      "while": "while (condition) {\n   statement(s)\n}"
+    },
+    {
+      "for": "for (initialization; condition; increment/decrement) {\n   statement(s)\n}"
+    },
+    {
+      "do...while": "do {\n   statement(s)\n} while (condition);"
+    }
+  ],
+  "loop control statements": [
+    {
+      "break": "execution jumps to the first statement following the loop"
+    },
+    {
+      "continue": "execution jumps to the end of the group of statements in the loop"
+    }
+  ],
+  "operators": [
+    {
+      "primitive": [
+        {
+          "assignment": [
+            { "=": "value assignment" },
+            { "+=": "addition assignment" },
+            { "-=": "subtraction assignment" },
+            { "*=": "multiplication assignment" },
+            { "/=": "division assignment" },
+            { "%=": "modulo assignment" }
+          ],
+          "concatenation": {
+            "+": "char and/or String concatenation resulting in String"
+          },
+          "math": [
+            {
+              "arithmetic": [
+                { "+": "addition" },
+                { "-": "subtraction" },
+                { "*": "multiplication" },
+                { "/": "division" },
+                { "%": "modulo" }
+              ]
+            },
+            {
+              "unary": [
+                { "++": "increment prefix or postfix" },
+                { "--": "decrement prefix or post fix" }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": [
+    {
+      "types": [
+        { "int": "integer" },
+        { "double": "double precision floating point" },
+        { "char": "character" },
+        { "String": "text string class" },
+        { "Boolean": "\"true\" or \"false\"" }
+      ]
+    }
+  ]
+}
