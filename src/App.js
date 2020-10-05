@@ -44,13 +44,12 @@ class App extends React.Component {
     this.state = {
       selectedOption: "C",
     };
+    this.handleChange = (changeEvent) => {
+      this.setState({
+        selectedOption: changeEvent.target.value,
+      });
+    };
   }
-
-  handleChange = (changeEvent) => {
-    this.setState({
-      selectedOption: changeEvent.target.value,
-    });
-  };
 
   render() {
     return (

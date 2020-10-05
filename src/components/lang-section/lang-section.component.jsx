@@ -9,8 +9,8 @@ export function LangSection(props) {
       <RadioGroup
         aria-label="language"
         name="language"
-        value={this.state.selectedOption}
-        onChange={this.handleChange}
+        value={props.selectedOption}
+        onChange={props.handleChange}
       >
         <FormControlLabel value="C" control={<Radio />} label="C" />
         <FormControlLabel value="Java" control={<Radio />} label="Java" />
