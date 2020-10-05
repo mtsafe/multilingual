@@ -1,18 +1,20 @@
 {
   "comments": [
-    { "single-line": "begins with double slash as:\n// the comment" },
-    { "multi-line": "enclosed as\n/* the comment */" },
-    { "documentation comment": "enclosed as\n/** the documentation comment */" }
+    { "single-line": "begins with double slash as:\n\t// the comment" },
+    { "multi-line": "enclosed as\n\t/* the comment */" },
+    {
+      "documentation comment": "enclosed as\n\t/** the documentation comment */"
+    }
   ],
   "loops": [
     {
-      "while": "while (condition) {\n   statement(s)\n}"
+      "while": "while (condition) {\n\tstatement(s)\n}"
     },
     {
-      "for": "for (initialization; condition; increment/decrement) {\n   statement(s)\n}"
+      "for": "for (initialization; condition; increment/decrement) {\n\tstatement(s)\n}"
     },
     {
-      "do...while": "do {\n   statement(s)\n} while (condition);"
+      "do...while": "do {\n\tstatement(s)\n} while (condition);"
     }
   ],
   "loop control statements": [

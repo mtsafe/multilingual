@@ -1,8 +1,42 @@
 import React from "react";
-import { FormControl, FormControlLabel, FormLabel } from "@material-ui/core";
-import { Radio, RadioGroup } from "@material-ui/core";
+import { LangSection } from "./components/lang-section/lang-section.component";
 import logo from "./logo.svg";
 import "./App.css";
+import { default as java } from "./assets/json/java.json";
+
+function foo() {
+  let str = JSON.stringify(java);
+  const regexs = [
+    {
+      key: /\[/gi,
+      value: `[
+`,
+    },
+    {
+      key: /\\n/gi,
+      value: `\n`,
+    },
+    {
+      key: /\\t/gi,
+      value: `   `,
+    },
+    {
+      key: /},/gi,
+      value: `},
+`,
+    },
+    {
+      key: /],/gi,
+      value: `],
+`,
+    },
+  ];
+
+  regexs.forEach(({ key, value }) => {
+    str = str.replace(key, value);
+  });
+  return str;
+}
 
 class App extends React.Component {
   constructor(props) {
@@ -23,29 +57,8 @@ class App extends React.Component {
       <div className="App">
         <nav>
           <h1>Multilingual</h1>
-          <FormControl component="fieldset">
-            <FormLabel component="legend">Language</FormLabel>
-            <RadioGroup
-              aria-label="language"
-              name="language"
-              value={this.state.selectedOption}
-              onChange={this.handleChange}
-            >
-              <FormControlLabel value="C" control={<Radio />} label="C" />
-              <FormControlLabel value="Java" control={<Radio />} label="Java" />
-              <FormControlLabel
-                value="Javascript"
-                control={<Radio />}
-                label="Javascript"
-              />
-              <FormControlLabel
-                value="Python"
-                disabled
-                control={<Radio />}
-                label="Python (Disabled option)"
-              />
-            </RadioGroup>
-          </FormControl>
+          <LangSection />
+          <pre>{`${foo()}`}</pre>
         </nav>
         <header className="App-header">
           <div id="lang-chooser"></div>
