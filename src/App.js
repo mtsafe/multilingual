@@ -1,5 +1,6 @@
 import React from "react";
 import { LangSection } from "./components/lang-section/lang-section.component";
+import { MultipleSelect } from "./components/multiple-select/multiple-select.component";
 import logo from "./logo.svg";
 import "./App.css";
 import { default as java } from "./assets/json/java.json";
@@ -56,7 +57,10 @@ class App extends React.Component {
       <div className="App">
         <nav>
           <h1>Multilingual</h1>
-          <LangSection />
+          <div className="nav-select-group">
+            <LangSection />
+            <MultipleSelect />
+          </div>
           <pre>{`${foo()}`}</pre>
         </nav>
         <header className="App-header">
