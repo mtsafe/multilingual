@@ -1,5 +1,4 @@
 import React from "react";
-import { LangSection } from "./components/lang-section/lang-section.component";
 import { MultipleSelect } from "./components/multiple-select/multiple-select.component";
 import logo from "./logo.svg";
 import "./App.css";
@@ -39,6 +38,20 @@ function foo() {
   return str;
 }
 
+const languageList = ["ANSI C", "Java", "Javascript", "Python"];
+
+const featureList = [
+  "comments",
+  "loops",
+  "loop control statements",
+  "operators",
+  "concatenation",
+  "math",
+  "variables",
+];
+
+const subfeatureList = [];
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -58,8 +71,9 @@ class App extends React.Component {
         <nav>
           <h1>Multilingual</h1>
           <div className="nav-select-group">
-            <LangSection />
-            <MultipleSelect />
+            <MultipleSelect label="Languages" list={languageList} />
+            <MultipleSelect label="Features" list={featureList} />
+            <MultipleSelect label="Sub-Features" list={subfeatureList} />
           </div>
           <pre>{`${foo()}`}</pre>
         </nav>
