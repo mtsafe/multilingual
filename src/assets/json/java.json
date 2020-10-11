@@ -1,4 +1,46 @@
 {
+  "about": {
+    "phylogeny": "derives from C/C++ but without pointers",
+    "class based": true,
+    "OOP": true,
+    "automatic garbage collection": true,
+    "static type-checking": "at compile time and runtime",
+    "compiled": "into bytecode",
+    "interpreted": false,
+    "multi-threading": true,
+    "platform independent": true,
+    "environment": "runs in a virtual machine",
+    "programming paradigms": {
+      "encapsulation": "data and methods are bundled into classes",
+      "inheritance": "an object of a class acquires properties and behaviors of parent classes",
+      "information hiding": "information can be restricted to reduce interconnectiveness of a system",
+      "polymorphism": "a parent class reference can refer to child class objects and child class objects can inherit from multiple parent classes"
+    },
+    "platforms": {
+      "Java SE": "provides core functionalities and high-level classes for networking, security, database and GUI",
+      "Java EE": "includes Java SE and suitable for enterprise-scale apps",
+      "Java ME": "a subset of Java SE and suitable for small devices like phones",
+      "Java FX": "for internet apps using lightweight UI using accelerated graphics and media engines and using high-level APIs for networked data sources"
+    },
+    "file extensions": {
+      ".class": "compiled code",
+      ".jar": "executable within a JVM",
+      ".java": "source code"
+    },
+    "standard packages": {
+      "java.applet": "applet support embedded in an HTML document",
+      "java.awt": "Abstract Windowing Toolkit for GUI",
+      "java.io": "file i/o",
+      "java.lang": "basic language support",
+      "java.net": "supports TCP/IP",
+      "java.util": "miscellaneous classes",
+      "java.sql": "database (JDBS)"
+    }
+  },
+  "memory management": {
+    "stack management": "stack memory allocated per thread",
+    "heap management": "heap memory holds objects for the JVM"
+  },
   "comments": [
     { "single-line": "begins with double slash as:\n\t// the comment" },
     { "multi-line": "enclosed as\n\t/* the comment */" },
