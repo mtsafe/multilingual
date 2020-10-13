@@ -9,3 +9,4 @@ The user will:
 
 ## Implementation
 A React SPA
+Each language is described in it's own JSON file.
