@@ -8,5 +8,5 @@ The user will:
 3. Information about that feature of each language will appear.
 
 ## Implementation
-A React SPA
+A React SPA.<br>
 Each language is described in it's own JSON file.
