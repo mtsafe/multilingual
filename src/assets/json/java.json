@@ -57,6 +57,9 @@
     },
     {
       "do...while": "do {\n\tstatement(s)\n} while (condition);"
+    },
+    {
+      "for-each": "for (type element : array) {\n\tstatement(s)\n}"
     }
   ],
   "loop control statements": [
