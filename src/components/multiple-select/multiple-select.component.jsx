@@ -54,6 +54,7 @@ export function MultipleSelect({ label, list }) {
   const handleChange = (event) => {
     setPersonName(event.target.value);
   };
+  let inputId = label + "-select-multiple-chip";
   let selectionLabel = label;
   let selectionList = list.length === 0 ? ["<none>"] : list;
   return (
@@ -66,7 +67,7 @@ export function MultipleSelect({ label, list }) {
           multiple
           value={personName}
           onChange={handleChange}
-          input={<Input id="select-multiple-chip" />}
+          input={<Input id={inputId} />}
           renderValue={(selected) => (
             <div className={classes.chips}>
               {selected.map((value) => (
